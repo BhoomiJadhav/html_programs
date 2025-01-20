@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Information Form Simulation</title>
+</head>
+
+<body>
+    <script>
+        // Use prompt to collect user input for personal information
+
+        // Prompt the user for their name
+        let name = prompt("What is your name?");
+
+        // Prompt the user for their age and convert it to a number
+        let age = parseInt(prompt("What is your age?"), 10);
+
+        // Prompt the user for their favorite color
+        let favoriteColor = prompt("What is your favorite color?");
+
+        // Prompt the user for their hobbies (comma-separated)
+        let hobbiesInput = prompt("List your favorite hobbies, separated by commas:");
+
+        // Convert the comma-separated string into an array
+        let hobbies = hobbiesInput.split(",").map(hobby => hobby.trim());
+
+        // Log the variables to the console
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("Favorite Color:", favoriteColor);
+        console.log("Hobbies:", hobbies);
+
+        // Display the information on the webpage using document.write
+        document.write("<h2>Personal Information</h2>");
+        document.write("<p><strong>Name:</strong> " + name + "</p>");
+        document.write("<p><strong>Age:</strong> " + age + "</p>");
+        document.write("<p><strong>Favorite Color:</strong> " + favoriteColor + "</p>");
+        document.write("<p><strong>Hobbies:</strong> " + hobbies.join(", ") + "</p>");
+
+        // Explanation of each section is provided through comments above
+    </script>
+</body>
+
+</html>

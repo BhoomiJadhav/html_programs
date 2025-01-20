@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Syntax - Activity 3</title>
+</head>
+
+<body>
+    <h1>JavaScript Syntax </h1>
+    <div id="output"></div>
+    <script>
+        // Single-line comment: Declaring variables of different data types
+
+        // String type variable
+        let name = "Bhoomi";
+
+        // Number type variable
+        let age = 19;
+
+        // Boolean type variable
+        let isStudent = true;
+
+        // Array type variable
+        let favoriteFruits = ["Apple", "Banana", "Cherry"];
+
+        // Object type variable
+        let address = {
+            city: "Ambernath",
+            zipCode: 421501
+        };
+
+        /* 
+        Multi-line comment: 
+        Logging variables to the console for debugging and display 
+        on the webpage.
+        */
+
+        // Log variables to the console
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("Is Student:", isStudent);
+        console.log("Favorite Fruits:", favoriteFruits);
+        console.log("Address:", address);
+
+        // Display variables on the webpage
+        document.getElementById("output").innerHTML = `
+            <h2>Output</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Age:</strong> ${age}</p>
+            <p><strong>Is Student:</strong> ${isStudent}</p>
+            <p><strong>Favorite Fruits:</strong> ${favoriteFruits.join(", ")}</p>
+            <p><strong>Address:</strong> ${address.city}, ${address.zipCode}</p>
+        `;
+
+        // Display a greeting using an alert
+        alert("Welcome to the JavaScript Syntax Demo- Activity 3!");
+    </script>
+</body>
+
+</html>
